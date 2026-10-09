@@ -1,0 +1,54 @@
+nohup: ignoring input
+== 1/4  Simulation for Fig. 3(b),(c): v0 = 0, 0.1, 0.2, 0.3 m/s (about 40 min) ==
+=== v0 = 0.0 m/s ===
+  step      0  t=   0.00 ms  x_com= 144.5  contact=  0  Q/Qref=0.9757  [  1.4s]
+  step   2000  t=  39.92 ms  x_com= 236.8  contact=103  Q/Qref=0.9717  [ 72.8s]
+  step   4000  t=  79.85 ms  x_com= 289.6  contact= 54  Q/Qref=0.9722  [142.4s]
+  step   6000  t= 119.77 ms  x_com= 367.9  contact= 68  Q/Qref=0.9726  [211.9s]
+  step   8000  t= 159.69 ms  x_com= 465.1  contact=  0  Q/Qref=0.9919  [280.9s]
+  step  10000  t= 199.61 ms  x_com= 548.2  contact=  0  Q/Qref=0.9967  [349.0s]
+=== v0 = 0.1 m/s ===
+  step      0  t=   0.00 ms  x_com= 144.5  contact=  0  Q/Qref=0.9757  [  0.8s]
+  step   2000  t=  39.92 ms  x_com= 244.9  contact=116  Q/Qref=0.9716  [ 66.9s]
+  step   4000  t=  79.85 ms  x_com= 304.5  contact= 66  Q/Qref=0.9721  [133.9s]
+  step   6000  t= 119.77 ms  x_com= 393.2  contact= 68  Q/Qref=0.9735  [199.8s]
+  step   8000  t= 159.69 ms  x_com= 489.2  contact=  0  Q/Qref=0.9939  [265.3s]
+=== v0 = 0.2 m/s ===
+  step      0  t=   0.00 ms  x_com= 144.5  contact=  0  Q/Qref=0.9757  [  0.8s]
+  step   2000  t=  39.92 ms  x_com= 254.6  contact=120  Q/Qref=0.9716  [ 67.7s]
+  step   4000  t=  79.85 ms  x_com= 320.2  contact= 71  Q/Qref=0.9722  [134.6s]
+  step   6000  t= 119.77 ms  x_com= 416.5  contact= 43  Q/Qref=0.9769  [202.0s]
+  step   8000  t= 159.69 ms  x_com= 513.1  contact=  0  Q/Qref=0.9951  [268.6s]
+=== v0 = 0.3 m/s ===
+  step      0  t=   0.00 ms  x_com= 144.5  contact=  0  Q/Qref=0.9757  [  0.8s]
+  step   2000  t=  39.92 ms  x_com= 265.3  contact=129  Q/Qref=0.9716  [ 67.6s]
+  step   4000  t=  79.85 ms  x_com= 335.5  contact= 67  Q/Qref=0.9725  [133.8s]
+  step   6000  t= 119.77 ms  x_com= 433.3  contact= 19  Q/Qref=0.9826  [200.6s]
+  step   8000  t= 159.69 ms  x_com= 532.4  contact=  0  Q/Qref=0.9958  [266.4s]
+saved fig3_results.pkl
+== 2/4  Droplet shapes for Fig. 3(a): flow-only run, v0 = 0 (about 4 min) ==
+run (164s): contact at 23 ms, leaves at 152 ms
+   t=   55 ms  slide speed 0.10 m/s  length 9.4 mm  thickness 1.3 mm (rear 1.0, front 1.0)  L/H 7.2
+   t=   87 ms  slide speed 0.11 m/s  length 6.9 mm  thickness 2.2 mm (rear 1.3, front 1.4)  L/H 3.1
+   t=  119 ms  slide speed 0.27 m/s  length 6.8 mm  thickness 2.7 mm (rear 1.4, front 1.6)  L/H 2.5
+   t=  145 ms  slide speed 0.21 m/s  length 6.1 mm  thickness 3.1 mm (rear 1.1, front 2.6)  L/H 2.0
+saved fig3a_v0.0.pkl
+DONE
+== 3/4  Fig. 3(a) picture ==
+saved fig3a_compare.png frames at [23, 28, 95, 151] ms
+== 4/4  Fig. 3(b),(c) pictures and numbers ==
+Fig. 3(c) current                     paper                       |   this work
+ v0   landing peak   release peak  width | landing peak   release peak  width
+ 0.0   -36.6 nA @  27    303 nA @ 152   17 ms |  -45.2 nA @  24    298 nA @ 150   13 ms
+ 0.1   -40.0 nA @  20    305 nA @ 144   25 ms |  -48.6 nA @  15    284 nA @ 141   14 ms
+ 0.2   -46.4 nA @  15    295 nA @ 138   17 ms |  -58.6 nA @  10    260 nA @ 132   17 ms
+ 0.3   -56.9 nA @  11    274 nA @ 134   19 ms |  -73.5 nA @   6    227 nA @ 123   19 ms
+
+Fig. 3(b) electrode charge (nC)   paper: start / sliding / end   |  this work
+ v0=0.0   237.33 / 236.76 / 242.73   |   237.08 / 236.12 / 242.16
+ v0=0.1   237.34 / 236.78 / 242.71   |   237.08 / 236.18 / 242.15
+ v0=0.2   237.33 / 236.71 / 242.83   |   237.08 / 236.20 / 242.15
+ v0=0.3   237.26 / 236.68 / 242.76   |   237.08 / 236.19 / 242.19
+
+saved fig3b_compare.png and fig3c_compare.png
+Done: fig3a_compare.png, fig3b_compare.png, fig3c_compare.png
